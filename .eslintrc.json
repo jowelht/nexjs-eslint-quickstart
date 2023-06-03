@@ -24,8 +24,10 @@
         // import/no-unresolved
         "import/no-unresolved": "off",
         // @/.. alias
-        "import/extensions": "off"
+        "import/extensions": "off",
         // import/newline-after-import
-        // "import/newline-after-import": "off"
+        "import/newline-after-import": "off",
+
+        "react/jsx-props-no-spreading": "off"
     }
 }

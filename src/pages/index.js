@@ -1,4 +1,5 @@
 import BlogCard from '@/compoents/blog';
+
 const blog = [
     { id: 1, title: 'jowel', subTitle: 'web designer' },
     { id: 2, title: 'Reza', subTitle: 'designer' },

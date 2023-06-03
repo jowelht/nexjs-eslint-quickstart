@@ -13,15 +13,19 @@
             }
         ],
         // Body Error in arrow function
-        "arrow-body-style": "off"
+        "arrow-body-style": "off",
+        //  react/jsx-filename-extension
+        "react/jsx-filename-extension": [
+            "warn",
+            {
+                "extensions": [".js", ".jsx"]
+            }
+        ],
+        // import/no-unresolved
+        "import/no-unresolved": "off",
         // @/.. alias
-        // "import/extensions": [
-        //     "error",
-        //     "ignorePackages",
-        //     {
-        //         "js": "never",
-        //         "jsx": "never"
-        //     }
-        // ]
+        "import/extensions": "off"
+        // import/newline-after-import
+        // "import/newline-after-import": "off"
     }
 }

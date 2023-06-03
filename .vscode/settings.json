@@ -1,0 +1,29 @@
+{
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.excludeLanguages": ["markdown"],
+    "terminal.integrated.tabs.enabled": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Default Dark+",
+    "git.confirmSync": false,
+    "editor.inlineSuggest.enabled": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": false,
+        "markdown": false,
+        "javascript": false
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "remote.SSH.remotePlatform": {
+        "sandbox.mnpgnk.csb": "linux"
+    },
+    "editor.formatOnSave": true
+}

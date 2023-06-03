@@ -1,3 +1,27 @@
 {
-  "extends": "next/core-web-vitals"
+    "extends": ["next", "airbnb", "next/core-web-vitals", "prettier"],
+    "plugins": ["react", "prettier"],
+    "rules": {
+        // Unused var or props in react
+        "no-unused-vars": 1,
+        // arrow function in react
+        "react/function-component-definition": [
+            2,
+            {
+                "unnamedComponents": "arrow-function",
+                "namedComponents": "arrow-function"
+            }
+        ],
+        // Body Error in arrow function
+        "arrow-body-style": "off"
+        // @/.. alias
+        // "import/extensions": [
+        //     "error",
+        //     "ignorePackages",
+        //     {
+        //         "js": "never",
+        //         "jsx": "never"
+        //     }
+        // ]
+    }
 }

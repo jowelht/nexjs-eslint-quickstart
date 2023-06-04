@@ -16,7 +16,7 @@
     },
     "rules": {
         // Unused var or props in react
-        "no-unused-vars": 1,
+        "no-unused-vars": 2,
         // arrow function in react
         "react/function-component-definition": [
             2,

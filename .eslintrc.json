@@ -37,7 +37,19 @@
         // import/no-unresolved
         "import/no-unresolved": "off",
         // @/.. alias
-        "import/extensions": "off",
+        // "import/extensions": "off",
+        // // @/.. alias
+        "import/extensions": [
+            "off",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+
         // import/newline-after-import
         "import/newline-after-import": "off",
 

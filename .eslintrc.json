@@ -1,5 +1,11 @@
 {
-    "extends": ["next", "airbnb", "next/core-web-vitals", "prettier"],
+    "extends": [
+        "next",
+        "next/core-web-vitals",
+        "airbnb",
+        "airbnb/hooks",
+        "prettier"
+    ],
     "plugins": ["react", "prettier"],
     "env": {
         "browser": true,
@@ -57,6 +63,11 @@
 
         // Next Require
         "react/no-unescaped-entities": "off",
-        "@next/next/no-page-custom-font": "off"
+        "@next/next/no-page-custom-font": "off",
+
+        // data type in props
+        "react/prop-types": "off",
+        // react scope error
+        "react/react-in-jsx-scope": "off"
     }
 }

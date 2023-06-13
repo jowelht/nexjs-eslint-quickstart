@@ -13,7 +13,8 @@ const BlogDetails = ({ post }) => {
     );
 };
 export const getStaticProps = ({ params }) => {
-    const post = BlogPostData.find((item) => item.id === Number(params.id));
+    const { id } = params;
+    const post = BlogPostData.find((item) => item.id === Number(id));
 
     return {
         props: {

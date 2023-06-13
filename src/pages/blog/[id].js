@@ -1,24 +1,37 @@
 import React from "react";
-import { useRouter } from "next/router";
 import BlogPostData from "../../data/blogs.json";
 
-const BlogDetails = () => {
-    const router = useRouter();
+const BlogDetails = ({ post }) => {
     return (
         <div>
             BlogDetails
-            <p>Post: {router.query.id} </p>
+            <div className="border p-4">
+                <p>Title: {post.title}</p>
+                <p>sub title: {post.subTitle}</p>
+            </div>
         </div>
     );
 };
+export const getStaticProps = ({ params }) => {
+    const post = BlogPostData.find((item) => item.id === Number(params.id));
 
-export default BlogDetails;
+    return {
+        props: {
+            post,
+        },
+    };
+};
 
 export const getStaticPaths = () => {
     const paths = BlogPostData.map((post) => ({
-        params: { id: post.id },
+        params: {
+            id: post.id.toString(),
+        },
     }));
-
-    // { fallback: false } means other routes should 404
-    return { paths, fallback: false };
+    return {
+        paths,
+        fallback: false,
+    };
 };
+
+export default BlogDetails;
